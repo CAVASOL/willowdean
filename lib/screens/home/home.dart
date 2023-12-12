@@ -13,22 +13,23 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SafeArea(
           child: SingleChildScrollView(
-              child: Column(
-            children: [
-              const LocationSearchBar(),
-              const CategoryNav(),
-              const SizedBox(
-                height: 20,
-              ),
-              const Divider(
-                height: 0,
-              ),
-              PostCard(),
-            ],
-          )),
+            child: Column(
+              children: [
+                const LocationSearchBar(),
+                const CategoryNav(),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Divider(
+                  height: 0,
+                ),
+                PostCard(),
+              ],
+            ),
+          ),
         ),
         bottomNavigationBar: SizedBox(
-          height: 100,
+          height: 90,
           child: BottomAppBar(
             child: Padding(
               padding: const EdgeInsets.only(top: 8, left: 20, right: 20),

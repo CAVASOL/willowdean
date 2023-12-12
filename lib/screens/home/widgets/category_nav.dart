@@ -13,7 +13,7 @@ class CategoryNav extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 40,
+            height: 48,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
