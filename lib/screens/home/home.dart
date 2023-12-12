@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:willowdean/screens/home/widgets/category_nav.dart';
 import 'package:willowdean/screens/home/widgets/location_search_bar.dart';
+import 'package:willowdean/screens/home/widgets/post_card.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -9,28 +10,28 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.amber,
-        body: const SafeArea(
+        backgroundColor: Colors.white,
+        body: SafeArea(
           child: SingleChildScrollView(
               child: Column(
             children: [
-              LocationSearchBar(),
-              CategoryNav(),
-              SizedBox(
+              const LocationSearchBar(),
+              const CategoryNav(),
+              const SizedBox(
                 height: 20,
               ),
-              Divider(
+              const Divider(
                 height: 0,
               ),
-              // PostCard(),
+              PostCard(),
             ],
           )),
         ),
         bottomNavigationBar: SizedBox(
-          height: 91,
+          height: 100,
           child: BottomAppBar(
             child: Padding(
-              padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 8, left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -42,13 +43,14 @@ class Home extends StatelessWidget {
                         color: Colors.black,
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 4,
                       ),
                       Text(
                         'Search',
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w400,
+                          fontSize: 12,
                         ),
                       ),
                     ],
@@ -61,13 +63,14 @@ class Home extends StatelessWidget {
                         color: Colors.black,
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 4,
                       ),
                       Text(
                         'Wishlist',
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w400,
+                          fontSize: 12,
                         ),
                       ),
                     ],
@@ -88,6 +91,7 @@ class Home extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w400,
+                          fontSize: 12,
                         ),
                       ),
                     ],
@@ -100,13 +104,14 @@ class Home extends StatelessWidget {
                         color: Colors.black,
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 4,
                       ),
                       Text(
                         'chat',
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w400,
+                          fontSize: 12,
                         ),
                       ),
                     ],
@@ -119,13 +124,14 @@ class Home extends StatelessWidget {
                         color: Colors.black,
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 4,
                       ),
                       Text(
                         'Profile',
                         style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w400,
+                          fontSize: 12,
                         ),
                       ),
                     ],

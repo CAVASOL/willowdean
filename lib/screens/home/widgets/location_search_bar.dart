@@ -44,13 +44,13 @@ class LocationSearchBar extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Text(
-                      'Wherever & Whenever',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 10,
-                      ),
-                    ),
+                    // Text(
+                    //   'Wherever & Whenever',
+                    //   style: TextStyle(
+                    //     color: Colors.grey,
+                    //     fontSize: 10,
+                    //   ),
+                    // ),
                   ],
                 )
               ],

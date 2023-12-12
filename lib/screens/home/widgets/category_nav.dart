@@ -8,12 +8,12 @@ class CategoryNav extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(
         top: 20,
-        left: 30,
+        left: 32,
       ),
       child: Column(
         children: [
           SizedBox(
-            height: 43,
+            height: 40,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -25,19 +25,20 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Trending',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  width: 30,
+                  width: 32,
                 ),
                 Column(
                   children: [
@@ -47,19 +48,20 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Island',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  width: 30,
+                  width: 32,
                 ),
                 Column(
                   children: [
@@ -69,18 +71,21 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Cave',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(
+                  width: 32,
+                ),
                 Column(
                   children: [
                     Image.asset(
@@ -89,18 +94,21 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Desert',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(
+                  width: 32,
+                ),
                 Column(
                   children: [
                     Image.asset(
@@ -109,18 +117,21 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Tropical',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(
+                  width: 32,
+                ),
                 Column(
                   children: [
                     Image.asset(
@@ -129,18 +140,21 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Art',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(
+                  width: 32,
+                ),
                 Column(
                   children: [
                     Image.asset(
@@ -149,18 +163,21 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Pool',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(
+                  width: 32,
+                ),
                 Column(
                   children: [
                     Image.asset(
@@ -169,13 +186,14 @@ class CategoryNav extends StatelessWidget {
                       width: 20,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 4,
                     ),
                     const Text(
                       'Mension',
                       style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
                       ),
                     ),
                   ],
