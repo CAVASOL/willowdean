@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:willowdean/screens/detail/seoul_detail.dart';
-import 'package:willowdean/screens/home/home.dart';
+import 'package:willowdean/screens/seoul/seoul_detail.dart';
+import 'package:willowdean/screens/explore/explore.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Willowdean',
       theme: ThemeData(fontFamily: 'AirbnbCeareal'),
       routes: {
-        '/': (context) => const Home(),
+        '/explore': (context) => const Home(),
         '/seoul': (context) => const SeoulDetail(),
       },
     );

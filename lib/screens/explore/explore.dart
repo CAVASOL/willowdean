@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:willowdean/screens/home/widgets/category_nav.dart';
-import 'package:willowdean/screens/home/widgets/location_search_bar.dart';
-import 'package:willowdean/screens/home/widgets/post_card.dart';
+import 'package:willowdean/screens/explore/widgets.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

@@ -1,4 +1,4 @@
-import 'package:willowdean/screens/home/home.dart';
+import 'package:willowdean/screens/explore/explore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
