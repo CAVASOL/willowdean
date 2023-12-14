@@ -13,14 +13,21 @@ class SeoulDetail extends StatelessWidget {
           Stack(
             children: [
               ImageSlideshow(
-                height: 350,
+                height: 360,
+                indicatorColor: Colors.black,
+                indicatorBackgroundColor: Colors.white,
+                indicatorPadding: 12,
                 children: [
                   Image.asset(
-                    'assets/images/seoul_detail.jpg',
+                    'assets/images/seoul_detail3.png',
                     fit: BoxFit.cover,
                   ),
                   Image.asset(
-                    'assets/images/seoul_detail2.jpg',
+                    'assets/images/seoul_detail4.png',
+                    fit: BoxFit.cover,
+                  ),
+                  Image.asset(
+                    'assets/images/seoul_detail5.png',
                     fit: BoxFit.cover,
                   ),
                 ],
@@ -33,7 +40,7 @@ class SeoulDetail extends StatelessWidget {
                     4,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.white54,
                     borderRadius: BorderRadius.circular(
                       20,
                     ),
@@ -68,7 +75,7 @@ class SeoulDetail extends StatelessWidget {
                       4,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.white54,
                       borderRadius: BorderRadius.circular(
                         20,
                       ),
@@ -82,12 +89,12 @@ class SeoulDetail extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 4,
+            height: 16,
           ),
           Padding(
             padding: const EdgeInsets.only(
-              left: 20,
-              right: 20,
+              left: 32,
+              right: 32,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,12 +102,12 @@ class SeoulDetail extends StatelessWidget {
                 const Text(
                   'Quiet Hanok hotel near Gyeongbokgung Palace',
                   style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w400,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(
-                  height: 16,
+                  height: 12,
                 ),
                 const Row(
                   children: [
@@ -112,14 +119,14 @@ class SeoulDetail extends StatelessWidget {
                       width: 4,
                     ),
                     Text(
-                      '8',
+                      '8  ',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                     SizedBox(
-                      width: 8,
+                      width: 4,
                     ),
                     Text(
                       '3 Reviews',
@@ -130,6 +137,9 @@ class SeoulDetail extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 12,
                 ),
                 const Row(
                   children: [
@@ -150,18 +160,18 @@ class SeoulDetail extends StatelessWidget {
                   color: Colors.grey,
                 ),
                 const SizedBox(
-                  height: 16,
+                  height: 20,
                 ),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      width: 280,
+                      width: 240,
                       child: Text(
-                        'Privately owned room, Host: \nYeon Kim',
+                        'Privately owned room, \nHost: Darth Vader',
                         style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
@@ -171,7 +181,7 @@ class SeoulDetail extends StatelessWidget {
                     CircleAvatar(
                       radius: 32,
                       backgroundImage: AssetImage(
-                        "assets/images/wildone.png",
+                        "assets/images/darth.png",
                       ),
                     )
                   ],
@@ -204,8 +214,8 @@ class SeoulDetail extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/images/door.png',
-                      width: 40,
-                      height: 40,
+                      width: 32,
+                      height: 32,
                     ),
                     const SizedBox(
                       width: 16,
@@ -213,8 +223,8 @@ class SeoulDetail extends StatelessWidget {
                     const Text(
                       'Host check-in',
                       style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ],
@@ -222,14 +232,14 @@ class SeoulDetail extends StatelessWidget {
                 const Row(
                   children: [
                     SizedBox(
-                      width: 56,
+                      width: 48,
                     ),
                     Text(
                       'Contact the host',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
-                        color: Colors.grey,
+                        color: Colors.black,
                       ),
                     )
                   ],

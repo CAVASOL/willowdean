@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CategoryNav extends StatelessWidget {
-  const CategoryNav({super.key});
+  const CategoryNav({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,195 +10,45 @@ class CategoryNav extends StatelessWidget {
         top: 20,
         left: 32,
       ),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            _buildCategoryItem('assets/images/fire.png', 'Trending'),
+            _buildCategoryItem('assets/images/palm-tree.png', 'Island'),
+            _buildCategoryItem('assets/images/cave.png', 'Cave'),
+            _buildCategoryItem('assets/images/cactus.png', 'Desert'),
+            _buildCategoryItem('assets/images/island.png', 'Tropical'),
+            _buildCategoryItem('assets/images/art.png', 'Art'),
+            _buildCategoryItem('assets/images/swimming-pool.png', 'Pool'),
+            _buildCategoryItem('assets/images/villa.png', 'Mansion'),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCategoryItem(String imagePath, String label) {
+    return Padding(
+      padding: const EdgeInsets.only(
+        right: 32,
+      ),
       child: Column(
         children: [
-          SizedBox(
-            height: 48,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/fire.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Trending',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/palm-tree.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Island',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/cave.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Cave',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/cactus.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Desert',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/island.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Tropical',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/art.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Art',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/swimming-pool.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Pool',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  width: 32,
-                ),
-                Column(
-                  children: [
-                    Image.asset(
-                      'assets/images/villa.png',
-                      height: 20,
-                      width: 20,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    const Text(
-                      'Mension',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+          Image.asset(
+            imagePath,
+            height: 20,
+            width: 20,
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          Text(
+            label,
+            style: const TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
             ),
           ),
         ],
