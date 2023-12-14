@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Willowdean',
       theme: ThemeData(fontFamily: 'AirbnbCeareal'),
-      home: const SeoulDetail(),
+      routes: {
+        '/': (context) => const Explore(),
+        '/seoul': (context) => const SeoulDetail(),
+      },
     );
   }
 }

@@ -21,7 +21,10 @@ class PostCard extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, '/seoul');
+              Navigator.pushNamed(
+                context,
+                '/seoul',
+              );
             },
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

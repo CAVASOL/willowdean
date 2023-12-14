@@ -11,7 +11,7 @@ class SeoulDetail extends StatelessWidget {
       body: Column(
         children: [
           Stack(
-            children: [
+            children: <Widget>[
               ImageSlideshow(
                 height: 360,
                 indicatorColor: Colors.black,
@@ -58,16 +58,18 @@ class SeoulDetail extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                          transitionDuration: const Duration(milliseconds: 500),
-                          pageBuilder:
-                              (context, animation, secondaryAnimation) {
-                            return const Home();
-                          },
-                          transitionsBuilder:
-                              ((context, animation, secondaryAnimation, child) {
-                            return FadeTransition(
-                                opacity: animation, child: child);
-                          })),
+                        transitionDuration: const Duration(microseconds: 500),
+                        pageBuilder: (context, animation, secondaryAnimation) {
+                          return const Explore();
+                        },
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          return FadeTransition(
+                            opacity: animation,
+                            child: child,
+                          );
+                        },
+                      ),
                     );
                   },
                   child: Container(
